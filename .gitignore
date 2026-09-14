@@ -1,0 +1,29 @@
+# Live deployment secrets and local overrides
+.env
+.env.*
+immich.local.json
+!example.env
+*.bak
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Photos, database, runtime state, and backup output
+/library/
+/postgres/
+/logs/
+/backups/
+/tailscale/state/
+*.sql
+*.sql.gz
+*.dump
+
+# macOS and Swift build products
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+/macOS/dist/
+/macOS/.swiftpm/
